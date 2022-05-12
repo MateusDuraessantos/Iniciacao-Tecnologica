@@ -10,10 +10,10 @@
       <div class="lab-title">
         xxxXLaboratório xxxde Neurociênciaxxx CognitivaXXX e Social
       </div>
-      <P class="sp-school"
-        >São Paulo School of Advanced Science on social and affective
-        Neuroscience (SPSAN)</P
-      >
+      <p class="sp-school">
+        São Paulo School of Advanced Science on social and affective
+        Neuroscience (SPSAN)
+      </p>
 
       <!--  -->
 
@@ -68,7 +68,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Serra de corte DeWalt.jpg"
+                  src="../assets/equipamentos/ferramentas/serra-de-corte.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Serra de corte DeWalt</p>
@@ -189,19 +189,19 @@
                         <div class="grid-infos-img">
                           <img
                             class="img-infos"
-                            src="assets/equipamentos/ferramentas/Serra de corte DeWalt.jpg"
+                            src="../assets/equipamentos/ferramentas/serra-de-corte.jpg"
                           />
                           <img
                             class="img-infos"
-                            src="assets/equipamentos/ferramentas/Serra de corte DeWalt 1.jpg"
+                            src="../assets/equipamentos/ferramentas/serra-de-corte-1.jpg"
                           />
                           <img
                             class="img-infos"
-                            src="assets/equipamentos/ferramentas/Serra de corte DeWalt.jpg"
+                            src="../assets/equipamentos/ferramentas/serra-de-corte-1.jpg"
                           />
                           <img
                             class="img-infos"
-                            src="assets/equipamentos/ferramentas/Serra.jpg"
+                            src="../assets/equipamentos/ferramentas/serra.jpg"
                           />
                         </div>
                       </div>
@@ -215,7 +215,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Furadeira de bancada.jpg"
+                  src="../assets/equipamentos/ferramentas/furadeira-de-bancada.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Furadeira de bancada</p>
@@ -229,7 +229,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Serra de bancada.jpg"
+                  src="../assets/equipamentos/ferramentas/serra-de-bancada.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Serra de bancada</p>
@@ -243,7 +243,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/CNC router.jpg"
+                  src="../assets/equipamentos/ferramentas/cnc-router.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">CNC router</p>
@@ -257,7 +257,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Tico Tico.jpg"
+                  src="../assets/equipamentos/ferramentas/tico-tico.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Tico Tico.jpg</p>
@@ -271,7 +271,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Tupia.jpg"
+                  src="../assets/equipamentos/ferramentas/tupia.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Tupia</p>
@@ -285,7 +285,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/furadeira.jpg"
+                  src="../assets/equipamentos/ferramentas/furadeira.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Furadeira</p>
@@ -299,7 +299,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Parafusadeira a bateria.jpg"
+                  src="../assets/equipamentos/ferramentas/parafusadeira-a-bateria.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Parafusadeira a bateria</p>
@@ -313,7 +313,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/ferramentas/Lixadeira angular.jpg"
+                  src="../assets/equipamentos/ferramentas/lixadeira-angular.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Lixadeira angular</p>
@@ -352,7 +352,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Martelo.jpg"
+                  src="../assets/equipamentos/martelo.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Martelo</p>
@@ -366,7 +366,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Chave Philips.jpg"
+                  src="../assets/equipamentos/chave-philips.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Chave Philips</p>
@@ -380,7 +380,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Cola.jpg"
+                  src="../assets/equipamentos/cola.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Cola</p>
@@ -394,7 +394,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Pregos.jpg"
+                  src="../assets/equipamentos/pregos.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Pregos</p>
@@ -408,7 +408,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Alicate.jpg"
+                  src="../assets/equipamentos/alicate.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Alicate</p>
@@ -422,7 +422,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Regua de metal Aço inox.jpg"
+                  src="../assets/equipamentos/regua-de-metal-aco-inox.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Regua de metal Aço inox</p>
@@ -436,7 +436,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="assets/equipamentos/Clipes de madeira.jpg"
+                  src="../assets/equipamentos/clipes-de-madeira.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Clipes de madeira</p>
@@ -480,19 +480,19 @@
             <div class="container-contato">
               <p class="contato">Contato</p>
               <div class="info-contato">
-                <img src="assets/icons/phone.svg" />
+                <img src="../assets/icons/phone.svg" />
                 <p>+55 (11) 2114-8707</p>
               </div>
               <div class="info-contato">
-                <img src="assets/icons/email.svg" />
+                <img src="../assets/icons/email.svg" />
                 <p>disturbios.pos@mackenzie.br</p>
               </div>
               <div class="info-contato">
-                <img src="assets/icons/clock.svg" />
+                <img src="../assets/icons/clock.svg" />
                 <p>Das 8h00 às 13h00 e das 14h30 às 16h00</p>
               </div>
               <div class="info-contato">
-                <img src="assets/icons/pin.svg" />
+                <img src="../assets/icons/pin.svg" />
                 <p>
                   Rua da Consolação, 896 - prédio 28, 1° andar - consolação, São
                   Paulo - Sp, Brasil 01302-907
