@@ -10,10 +10,10 @@
       <div class="lab-title">
         xxxXLaboratório xxxde Neurociênciaxxx CognitivaXXX e Social
       </div>
-      <P class="sp-school"
-        >São Paulo School of Advanced Science on social and affective
-        Neuroscience (SPSAN)</P
-      >
+      <p class="sp-school">
+        São Paulo School of Advanced Science on social and affective
+        Neuroscience (SPSAN)
+      </p>
 
       <!--  -->
 
@@ -68,7 +68,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/serra_de_corte.jpg"
+                  src="../assets/equipamentos/ferramentas/serra-de-corte.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Serra de corte DeWalt</p>
@@ -83,131 +83,6 @@
                     Saiba mais
                   </button>
                 </div>
-
-                <!-- Modal Saiba mais Serra de corte-->
-
-                <div
-                  class="modal fade"
-                  id="serradecorte"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">Sobre</th>
-                              <th scope="col"></th>
-                            </tr>
-                          </thead>
-
-                          <tbody>
-                            <tr>
-                              <td scope="row">Serra de corte DeWalt</td>
-                              <td class="infos">
-                                Serra corte rápido construção robusta, morsa de
-                                aperto rápido, guia de corte angular,
-                                compartimento integrado para chave de ajuste e
-                                troca do disco, interruptor tipo gatilho com
-                                função homem morto e orifício para cadeado.
-                                Ideal para trabalhos em serralheiras e
-                                departamentos de manutenção em cortes de metais.
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Unidades</th>
-                              <td>1</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">Rotações por minuto:</td>
-                              <td scope="row">4.000RPM</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Diâmetro do Disco:</td>
-                              <td scope="row">14 Pol. (355mm)</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Espessura Máx.:</td>
-                              <td scope="row">Lâmina 2,8mm</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Esquadria Esquerda:</td>
-                              <td scope="row">0-45°</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Esquadria Direita:</td>
-                              <td scope="row">0-45°</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Capacidade Máx.:</td>
-                              <td scope="row">Corte Esquadria 90° Tubo</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Quadrado:</td>
-                              <td scope="row">A = 115mm X L = 115mm</td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">
-                                Capacidade Máx. Corte Esquadria
-                              </td>
-                              <td scope="row">
-                                90° Tubo Retangular A = 115mm X L = 130mm L =
-                                76mm X A = 229mm
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td scope="row">Capacidade Máx.:</td>
-                              <td>
-                                Corte Esquadria 90° Cantoneira: 115mm x 137mm
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <div class="grid-infos-img">
-                          <img
-                            class="img-infos"
-                            src="../assets/equipamentos/ferramentas/serra_de_corte.jpg"
-                          />
-                          <img
-                            class="img-infos"
-                            src="../assets/equipamentos/ferramentas/serra_de_corte.jpg"
-                          />
-                          <img
-                            class="img-infos"
-                            src="../assets/equipamentos/ferramentas/serra_de_corte.jpg"
-                          />
-                          <img
-                            class="img-infos"
-                            src="../assets/equipamentos/ferramentas/serra.jpg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <!--  -->
@@ -215,12 +90,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/furadeira_de_bancada.jpg"
+                  src="../assets/equipamentos/ferramentas/furadeira-de-bancada.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Furadeira de bancada</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -229,12 +112,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/serra_de_bancada.jpg"
+                  src="../assets/equipamentos/ferramentas/serra-de-bancada.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Serra de bancada</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -243,12 +134,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/cnc_router.jpg"
+                  src="../assets/equipamentos/ferramentas/cnc-router.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">CNC router</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -257,12 +156,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/tico_tico.jpg"
+                  src="../assets/equipamentos/ferramentas/tico-tico.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Tico Tico.jpg</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -277,6 +184,14 @@
                   <p class="ferramenta">Tupia</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -291,6 +206,14 @@
                   <p class="ferramenta">Furadeira</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -299,12 +222,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/parafusadeira_a_bateria.jpg"
+                  src="../assets/equipamentos/ferramentas/parafusadeira-a-bateria.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Parafusadeira a bateria</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
 
@@ -313,12 +244,20 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/ferramentas/lixadeira_angular.jpg"
+                  src="../assets/equipamentos/ferramentas/lixadeira-angular.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Lixadeira angular</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
+                  <button
+                    class="saiba-mais"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#"
+                  >
+                    Saiba mais
+                  </button>
                 </div>
               </div>
             </div>
@@ -352,7 +291,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/Martelo.jpg"
+                  src="../assets/equipamentos/martelo.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Martelo</p>
@@ -366,7 +305,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/chave_philips.jpg"
+                  src="../assets/equipamentos/chave-philips.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Chave Philips</p>
@@ -380,7 +319,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/Cola.jpg"
+                  src="../assets/equipamentos/cola.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Cola</p>
@@ -408,7 +347,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/Alicate.jpg"
+                  src="../assets/equipamentos/alicate.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Alicate</p>
@@ -422,7 +361,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/regua_de_metal_aco_inox.jpg"
+                  src="../assets/equipamentos/regua-de-metal-aco-inox.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Regua de metal Aço inox</p>
@@ -436,7 +375,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/clipes_de_madeira.jpg"
+                  src="../assets/equipamentos/clipes-de-madeira.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Clipes de madeira</p>
@@ -452,10 +391,14 @@
 
         <div>
           <aside class="container-aside">
-            <p class="sobre">Sobre o Curso</p>
-            <b class="bold-sobre">Tipo:</b>
-            <p class="light">Mestreado e Doutorado - Stricto Sensu</p>
-            <b class="bold-sobre">Modalidade:</b>
+            <div class="cont-container-aside">
+              <p class="sobre">Sobre o Curso</p>
+              <b class="bold-sobre">Tipo:</b>
+            </div>
+            <div class="cont-container-aside">
+              <p class="light">Mestreado e Doutorado - Stricto Sensu</p>
+              <b class="bold-sobre">Modalidade:</b>
+            </div>
             <p class="light">Presencial</p>
             <b class="bold-sobre">Duração</b>
             <p class="light">Mestrado: 24 meses, Doutorado: 42 Meses</p>
@@ -727,11 +670,11 @@ main {
 .ferramenta {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 .horario-de-funcionamento {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .text-1 {
@@ -742,16 +685,6 @@ main {
 .text-2 {
   font-size: 12px;
   margin: 0;
-}
-
-.saiba-mais {
-  background: #cc141d;
-  color: white;
-  font-size: 12px;
-  font-weight: 200px;
-  width: max-content;
-  padding: 5px 10px;
-  border: none;
 }
 
 .cont-ferramentas {
@@ -793,7 +726,6 @@ main {
 .bold-sobre,
 .light {
   display: block;
-  margin-bottom: 10px;
 }
 
 .grid-infos-img {
