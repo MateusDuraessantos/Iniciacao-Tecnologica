@@ -42,7 +42,7 @@
 
           <div
             style="
-              margin: 70px 0 70px 0;
+              margin: 40px 0;
               width: 100%;
               display: flex;
               flex-direction: column;
@@ -59,7 +59,6 @@
                 background-color: black;
               "
             ></div>
-            <hr style="background: #dddddd; height: 1px; width: 100%" />
           </div>
 
           <div class="container-labs">
@@ -234,7 +233,7 @@
               <div
                 style="
                   display: inline-flex;
-                  margin-left: 5px;
+                  margin: 0 0 12px;
                   align-items: center;
                   justify-content: center;
                   background: #bcd631;
@@ -257,112 +256,117 @@
         </div>
       </div>
 
-      <div class="container-barra">
-        <div class="barra"></div>
-        <p class="title-img-lab">Imagens do laboratório</p>
-      </div>
+      <div class="container-carrossel">
+        <div class="container-barra">
+          <div class="barra"></div>
+          <div class="cont-title-img-lab">
+            <div class="vert"></div>
+            <p class="title-img-lab">Imagens do laboratório</p>
+          </div>
+        </div>
 
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/1.jpg"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/2.jpg"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/3.jpg"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/4.jpg"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/5.jpg"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="img-carrossel d-block w-100"
-              src="../assets/img/6.jpg"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/1.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/2.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/3.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/4.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/5.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carrossel d-block w-100"
+                src="../assets/img/6.jpg"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </main>
   </div>
@@ -433,7 +437,6 @@ main {
   margin: 0 25px;
   max-width: 1400px;
 }
-
 
 .text-about-course {
   font-weight: 300;
@@ -568,7 +571,6 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   width: calc(100% - 50px);
-
   margin: 100px 25px;
   max-width: 1400px;
 }
@@ -608,5 +610,27 @@ footer {
   height: 35vw;
   width: 100%;
   object-fit: cover;
+}
+
+.container-carrossel {
+  margin: auto;
+  width: calc(100% - 50px);
+}
+
+.cont-title-img-lab {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 50px 0;
+}
+
+.vert {
+  background: #7a1f7f;
+  width: 5px;
+  height: 30px;
+}
+
+.title-img-lab {
+
 }
 </style>

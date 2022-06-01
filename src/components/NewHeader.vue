@@ -2,7 +2,7 @@
   <div>
     <header>
       <div class="container-header">
-        <div class="colum-1">
+        <div class="column-1">
           <div class="container-universidade">
             <p class="universidade-1">Universdade Presbiteriana</p>
             <p class="universidade">Mackenzie</p>
@@ -12,13 +12,43 @@
 
           <p class="campus">Universidade - Campus Higienópolis</p>
         </div>
-        <div class="colum-2">
+        <div class="column-2">
           <img class="icons" src="../assets/icons/icons.png" />
           <p>INTERNATIONAL AFFAIRS</p>
           <img class="lupa" src="../assets/icons/search.svg" />
         </div>
       </div>
     </header>
+    <nav class="nav-cont">
+      <!-- Botões -->
+      <div class="labs">
+        <a href="">Marcenaria</a>
+      </div>
+
+      <div class="labs">
+        <a href="">Joias e Vidro</a>
+      </div>
+      
+      <div class="labs">
+        <a href="">Impressora a Lazer e 3D</a>
+      </div>
+
+      <div class="labs">
+        <a href="">Informática</a>
+      </div>
+      
+      <div class="labs">
+        <a href="">Cerâmica</a>
+      </div>
+      
+      <div class="labs">
+        <a href="">Ceramica</a>
+      </div>
+      
+      <div class="labs">
+        <a href="">Ceramica</a>
+      </div>
+    </nav>
     <div class="container-banner">
       <!-- 1° coluna -->
       <div class="banner">
@@ -51,6 +81,36 @@ header {
   width: 100%;
 }
 
+.nav-cont {
+  display: flex;
+  background: #b41c2c;
+  width: 100%;
+  height: 40px;
+  padding: 0 100px;
+}
+
+.labs{
+  display: flex;
+  align-items: center;
+  border: solid #CB616C;
+  border-width: 0 1px 0 0;
+  height: 100%;
+  width: max-content;
+  transition: .2s;
+}
+
+.labs:hover{
+  background: #8C0816;
+  transition: .2s;
+  color: white;
+}
+.labs a{
+  padding: 0 30px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .container-header {
   display: flex;
   align-items: center;
@@ -60,7 +120,12 @@ header {
   height: 70px;
 }
 
-.colum-1 {
+.column-1 {
+  display: flex;
+  align-items: center;
+}
+
+.column-2 {
   display: flex;
   align-items: center;
 }

@@ -65,114 +65,113 @@ export default {
 </script>
 
 <style scoped>
-
-
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 100px;
-    border: solid #00547F;
-    border-width: 4px 0 0 0;
-    width: 100%;
-    background: #CC141D;
-    color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin-top: 100px;
+  border: solid #00547f;
+  border-width: 4px 0 0 0;
+  width: 100%;
+  height: 500px;
+  background: #cc141d;
+  color: white;
 }
 
 .grid-creditos {
-    width: 100%;
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .container-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    width: calc(100% - 50px);
-
-    margin: 100px 25px;
-    max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: calc(100% - 150px);
+  height: max-content;
+  margin: auto;
 }
 
 .creditos {
-    font-size: 14px;
-
+  font-size: 14px;
 }
 
 .creditos p {
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .container-mensagem {
-    width: 100%;
-    background: #555555;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #555555;
 }
 
 .mensagem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    height: 40px;
-    width: calc(100% - 50px);
-    margin: 0 50px;
-    max-width: 1400px;
-    font-size: 14px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 40px;
+  width: calc(100% - 100px);
+
+  max-width: 1400px;
+  font-size: 14px;
+  color: white;
 }
 
 .mensagem p {
-    margin: 0;
+  margin: 0;
 }
 
 /* imagens do laboratório */
 
 .container-barra {
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
-    width: 100%;
-    max-width: 1400px;
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .barra {
-    width: 3px;
-    height: 38px;
-    margin-right: 10px;
-    background: #7A1F7F;
+  width: 3px;
+  height: 38px;
+  margin-right: 10px;
+  background: #7a1f7f;
 }
 
 .img-lab {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
 }
 
 .title-img-lab {
-    margin: 25px 0;
-    font-weight: 400;
+  margin: 25px 0;
+  font-weight: 400;
 }
 
-
 .img-lab img {
-    height: 16vw;
-    width: 100%;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.582);
-    object-fit: cover;
-    transition: .2s;
+  height: 16vw;
+  width: 100%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.582);
+  object-fit: cover;
+  transition: 0.2s;
 }
 
 .img-lab img:hover {
-    transform: scale(1.02);
-    transition: .2s;
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 
 .img-carrossel {
-    height: 35vw;
-    width: 100%;
-    object-fit: cover;
+  height: 35vw;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

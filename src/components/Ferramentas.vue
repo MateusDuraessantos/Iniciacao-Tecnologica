@@ -2,7 +2,7 @@
   <div>
     <div
       style="
-        margin: 70px 0 70px 0;
+        margin: 40px 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -19,7 +19,6 @@
           background-color: black;
         "
       ></div>
-      <hr style="background: #dddddd; height: 1px; width: 100%" />
     </div>
 
     <!--  -->
