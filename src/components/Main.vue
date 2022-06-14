@@ -67,7 +67,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/martelo.jpg"
+                  src="../assets/equipamentos/martelo-1.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Martelo</p>
@@ -95,7 +95,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/cola.jpg"
+                  src="../assets/equipamentos/cola-1.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Cola</p>
@@ -123,7 +123,7 @@
               <div class="equipamentos">
                 <img
                   class="img-equipamentos"
-                  src="../assets/equipamentos/alicate.jpg"
+                  src="../assets/equipamentos/alicate-1.jpg"
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Alicate</p>

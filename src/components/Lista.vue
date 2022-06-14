@@ -63,7 +63,7 @@
               />
               <img
                 class="img-infos"
-                src="../assets/equipamentos/ferramentas/serra.jpg"
+                src="../assets/equipamentos/ferramentas/serra-de-madeira.jpg"
               />
             </div>
           </div>
@@ -109,7 +109,7 @@
               />
               <img
                 class="img-infos"
-                src="../assets/equipamentos/ferramentas/serra.jpg"
+                src="../assets/equipamentos/ferramentas/serra-de-madeira.jpg"
               />
             </div>
           </div>

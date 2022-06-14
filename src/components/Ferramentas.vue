@@ -139,7 +139,7 @@
         <div class="equipamentos">
           <img
             class="img-equipamentos"
-            src="../assets/equipamentos/ferramentas/tupia.jpg"
+            src="../assets/equipamentos/ferramentas/tupia-tupia.jpg"
           />
           <div class="cont-ferramentas">
             <p class="ferramenta">Tupia</p>
@@ -229,7 +229,7 @@ export default {
   data() {
     return {
       lixadeira: {
-        avatar: "alicate.jpg",
+        avatar: "alicate-1.jpg",
         name: "Lixadeira angular",
         unidades: "2",
         imgPath: require("../assets/equipamentos/ferramentas/lixadeira-angular.jpg"),
