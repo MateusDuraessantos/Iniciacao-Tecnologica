@@ -1,6 +1,7 @@
 <template>
   <div>
     <NewHeader />
+    <router-view></router-view>
     <NewFooter />
   </div>
 </template>
@@ -12,8 +13,6 @@ import NewFooter from "./components/NewFooter.vue";
 export default {
   name: "App",
   components: {
-    ListaBraba,
-    MainContent,
     NewHeader,
     NewFooter,
   },
@@ -28,5 +27,28 @@ p {
   font-family: "roboto";
   padding: 0;
   margin: 0;
+}
+
+/* banners de todas as páginas */
+
+.container-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 370px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  width: calc(100% - 50px);
+  max-width: 1400px;
+  color: white;
+}
+
+.campus-higienopolis {
+  font-weight: 200;
 }
 </style>

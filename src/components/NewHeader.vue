@@ -21,53 +21,20 @@
     </header>
     <nav class="nav-cont">
       <!-- Botões -->
-      <div class="labs">
-        <a href="">Marcenaria</a>
-      </div>
-
-      <div class="labs">
-        <a href="">Joias e Vidro</a>
-      </div>
-      
-      <div class="labs">
-        <a href="">Impressora a Lazer e 3D</a>
-      </div>
-
-      <div class="labs">
-        <a href="">Informática</a>
-      </div>
-      
-      <div class="labs">
-        <a href="">Cerâmica</a>
-      </div>
-      
-      <div class="labs">
-        <a href="">Ceramica</a>
-      </div>
-      
-      <div class="labs">
-        <a href="">Ceramica</a>
-      </div>
+      <router-link class="labs first" to="./MarcenariaPage"
+        >Marcenaria</router-link
+      >
+      <router-link class="labs" to="./InformaticaPage">Informatica</router-link>
     </nav>
-    <div class="container-banner">
-      <!-- 1° coluna -->
-      <div class="banner">
-        <div>
-          <h1>Laboratório de Marcenaria</h1>
-          <p>
-            <strong>Centro de Marcenara e construção civil</strong> |
-            <em class="campus-higienopolis"> Campus Higienópolis</em>
-          </p>
-        </div>
-        <div></div>
-      </div>
-    </div>
+    
   </div>
 </template>
 
 <script>
 export default {
   name: "NewHeader",
+
+ 
 };
 </script>
 
@@ -89,22 +56,36 @@ header {
   padding: 0 100px;
 }
 
-.labs{
+.labs {
   display: flex;
   align-items: center;
-  border: solid #CB616C;
+  border: solid #cb616c;
   border-width: 0 1px 0 0;
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  font-weight: 300;
   height: 100%;
   width: max-content;
-  transition: .2s;
+  transition: 0.2s;
+  border: solid #cb616c;
+  border-width: 0 1px 0 0;
 }
 
-.labs:hover{
-  background: #8C0816;
-  transition: .2s;
+.first {
+  border-width: 0 1px 0 1px;
+}
+
+.last {
+  border-width: 0 1px 0 1px;
+}
+
+.labs:hover {
+  background: #8c0816;
+  transition: 0.2s;
   color: white;
 }
-.labs a{
+.labs a {
   padding: 0 30px;
   color: white;
   font-size: 14px;
@@ -163,27 +144,5 @@ header {
   font-weight: 300;
 }
 
-/* Banner */
 
-.container-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 370px;
-  width: 100%;
-  background-image: url("../assets/img/fleur-dQf7RZhMOJU-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.banner {
-  width: calc(100% - 50px);
-  max-width: 1400px;
-  color: white;
-}
-
-.campus-higienopolis {
-  font-weight: 200;
-}
 </style>
