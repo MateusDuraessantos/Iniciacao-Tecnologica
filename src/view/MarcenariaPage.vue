@@ -35,6 +35,6 @@ export default {
 
 <style scoped>
 .container-banner {
-  background-image: url("../assets/img/fleur-dQf7RZhMOJU-unsplash.jpg");
+  background-image: url("../assets/img/lab/marcenaria/capa.jpg");
 }
 </style>

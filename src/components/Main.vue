@@ -168,32 +168,30 @@
         <div>
           <aside class="container-aside">
             <div class="cont-container-aside">
-              <p class="sobre">Sobre o Curso</p>
-              <b class="bold-sobre">Tipo:</b>
-            </div>
-            <div class="cont-container-aside">
-              <p class="light">Mestreado e Doutorado - Stricto Sensu</p>
+              <p class="sobre">Sobre o laboratório</p>
               <b class="bold-sobre">Modalidade:</b>
             </div>
-            <p class="light">Presencial</p>
-            <b class="bold-sobre">Duração</b>
-            <p class="light">Mestrado: 24 meses, Doutorado: 42 Meses</p>
-            <b class="bold-sobre">Período(s) Oferecidos(s):</b>
-            <p class="light">Matutino, Vespentino e Noturno</p>
+            <div class="cont-container-aside">
+              <p class="light">Presencial</p>
+              <b class="bold-sobre">Horário de funcionamento:</b>
+            </div>
+            <p class="light">13h às 16h</p>
             <b class="bold-sobre">Local:</b>
-            <p class="light">Campus Higienópolis</p>
+            <p class="light" style="color: #0054a8">
+              Campus Higienópolis - <b>Prédio 9</b>
+            </p>
 
             <hr />
 
             <div class="prof">
               <img
                 class="img-prof"
-                src="../assets/img/pompom.jpg"
+                src="../assets/img/ivo.jpg"
                 alt="Ivo Pons"
               />
               <div>
-                Ivo Eduardo Roman Pons
-                <P>Professor</P>
+                Prof. Dr. Nieri Araujo
+                <p>Coordenador dos laboratórios FAUD</p>
               </div>
             </div>
             <div class="container-contato">
@@ -216,13 +214,6 @@
                   Rua da Consolação, 896 - prédio 28, 1° andar - consolação, São
                   Paulo - Sp, Brasil 01302-907
                 </p>
-              </div>
-
-              <p class="secretaria">Secretária do Coordenador:</p>
-              <p class="name">Daniele Aparecida Gomes</p>
-              <div class="valor">
-                Valor da mensalidade
-                <p>R$1.200,00</p>
               </div>
             </div>
           </aside>
@@ -252,6 +243,29 @@
               src="../assets/img/maps.jpg"
               alt="mapa superior Mackenzie"
             />
+
+            <br />
+            <br />
+
+            <p>Técnicos responsáveis - Lab</p>
+
+            <br />
+
+            <div class="cont-tec">
+              <img class="tec" src="../assets/img/mateus.jpg" />
+              <div class="name">
+                <p class="nome-1">Mateus Durães dos Santos</p>
+                <p class="nome-2">mateusduraes@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="cont-tec">
+              <img class="tec" src="../assets/img/nieri.jpg" />
+              <div class="name">
+                <p class="nome-1">Prof. Dr. Nieri Araujo</p>
+                <p class="nome-2">Nieri@gmail.com</p>
+              </div>
+            </div>
           </aside>
         </div>
       </div>
@@ -471,14 +485,21 @@ main {
 
 .light {
   color: #1a1a1a;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .prof {
   display: flex;
   align-items: center;
   font-size: 16px;
+  font-weight: 600;
   margin: 20px 0;
+}
+
+.prof p {
+  color: #8b8b8b;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .container-equipamentos {
@@ -520,31 +541,34 @@ main {
   margin-right: 20px;
 }
 
-.secretaria,
-.name {
-  font-size: 14px;
-}
-
-.name {
-  font-weight: 300;
-}
-
-.valor {
-  margin: 20px 0 0 0;
-  font-size: 14px;
-  border: 1px solid #d9d9d9;
-  background: #f5f5f5;
-  color: #555555;
-  padding: 10px;
-}
-
-.valor p {
-  color: #1a1a1a;
-  font-size: 20px;
-}
-
 h1 {
   margin: 0 0 15px 0;
+}
+.cont-tec {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-1 {
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 18px;
+}
+.nome-2 {
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.tec {
+  border-radius: 50%;
 }
 
 /* Footer */
@@ -631,6 +655,5 @@ footer {
 }
 
 .title-img-lab {
-
 }
 </style>

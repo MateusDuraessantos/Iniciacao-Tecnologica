@@ -138,6 +138,7 @@ export default {
   font-size: 12px;
   font-weight: 200px;
   width: max-content;
+  border-radius: 50px;
   padding: 2px 10px;
   border: none;
   border: 1px solid #cc141d;
