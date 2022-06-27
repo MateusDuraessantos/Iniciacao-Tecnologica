@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <!-- banner -->
     <div class="container-banner">
       <div class="banner">

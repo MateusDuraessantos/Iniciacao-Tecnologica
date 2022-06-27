@@ -120,7 +120,7 @@
             src="../assets/equipamentos/ferramentas/tico-tico.jpg"
           />
           <div class="cont-ferramentas">
-            <p class="ferramenta">Tico Tico.jpg</p>
+            <p class="ferramenta">Tico Tico</p>
             <p class="text-1">Unidades</p>
             <p class="text-2">2</p>
             <button

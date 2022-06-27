@@ -20,7 +20,7 @@
             ></button>
           </div>
           <div class="modal-body">
-             <table class="table">
+            <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Sobre</th>
@@ -44,7 +44,6 @@
                   <th scope="row">Unidades</th>
                   <td>1</td>
                 </tr>
-                
               </tbody>
             </table>
 
@@ -92,8 +91,6 @@
             ></button>
           </div>
           <div class="modal-body">
-           
-
             <div class="grid-infos-img">
               <img
                 class="img-infos"
@@ -116,18 +113,13 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 
 <script>
 export default {
   name: "ListaBraba",
-
 };
-
-
 </script>
 
 <style>
