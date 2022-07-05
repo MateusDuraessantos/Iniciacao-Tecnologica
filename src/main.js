@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap.js"
 
 import { createRouter, createWebHistory } from 'vue-router'
 
-import InformaticaPage from './components/InformaticaPage.vue'
+import InformaticaPage from './view/InformaticaPage.vue'
 import MarcenariaPage from './view/MarcenariaPage.vue'
 
 const router = createRouter({

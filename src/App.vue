@@ -29,26 +29,7 @@ p {
   margin: 0;
 }
 
-/* banners de todas as páginas */
-
-.container-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 370px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.banner {
-  width: calc(100% - 50px);
-  max-width: 1400px;
-  color: white;
-}
-
-.campus-higienopolis {
-  font-weight: 200;
+.selected {
+  background: #8c0816;
 }
 </style>

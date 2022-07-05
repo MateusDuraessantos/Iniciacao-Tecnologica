@@ -1,14 +1,8 @@
 <template>
   <div>
     <main>
-      <div class="container-barra">
-        <div class="barra"></div>
-        <p class="lab-group">Laboratórios e Grupos de Pesquisa</p>
-      </div>
-      <p class="labs">Laboratórios</p>
-
       <div class="lab-title">
-        xxxXLaboratório xxxde Neurociênciaxxx CognitivaXXX e Social
+        {{ pageName }}
       </div>
       <p class="sp-school">
         São Paulo School of Advanced Science on social and affective
@@ -21,16 +15,7 @@
           <div class="container-labs">
             <p>Lorem Ipsum is simply dummy text of the printing (SCN LAB)</p>
             <p class="text-about-course">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              {{ conteudos.apresentacao }}
             </p>
             <img
               style="margin-top: 20px; width: 100%"
@@ -387,11 +372,15 @@
 </template>
 <script>
 import FerramentasLabs from "./Ferramentas.vue";
-
 export default {
   name: "MainContent",
   components: {
     FerramentasLabs,
+  },
+  props: {
+    email: String,
+    pageName: String,
+    conteudos: String,
   },
 };
 </script>
@@ -410,22 +399,14 @@ main {
   font-size: 20px;
 }
 
-.labs {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 26px;
-  color: #555555;
-}
-
 .lab-title {
   background: #00547f;
   color: white;
   font-size: 17px;
   width: max-content;
   max-width: 1400px;
-  margin: 0 25px;
-  padding: 10px;
+  margin: 25px 0 25px 0;
+  padding: 10px 20px;
 }
 
 /*  */
@@ -652,8 +633,5 @@ footer {
   background: #7a1f7f;
   width: 5px;
   height: 30px;
-}
-
-.title-img-lab {
 }
 </style>
