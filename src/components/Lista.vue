@@ -38,6 +38,8 @@
                     com função homem morto e orifício para cadeado. Ideal para
                     trabalhos em serralheiras e departamentos de manutenção em
                     cortes de metais.
+
+                    <!-- {{ ferramentas.serraDeCorte }} -->
                   </td>
                 </tr>
                 <tr>
@@ -119,6 +121,9 @@
 <script>
 export default {
   name: "ListaBraba",
+  props: {
+    ferramentas: String,
+  },
 };
 </script>
 

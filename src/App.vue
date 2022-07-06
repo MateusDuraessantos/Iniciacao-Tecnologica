@@ -12,6 +12,9 @@ import NewFooter from "./components/NewFooter.vue";
 
 export default {
   name: "App",
+  props: {
+    estilo: String,
+  },
   components: {
     NewHeader,
     NewFooter,
@@ -29,7 +32,12 @@ p {
   margin: 0;
 }
 
-.selected {
+.selecionado {
   background: #8c0816;
+}
+
+.videos {
+  width: 100%;
+  margin-top: 25px;
 }
 </style>

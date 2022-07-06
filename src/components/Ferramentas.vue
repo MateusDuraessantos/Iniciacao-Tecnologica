@@ -157,67 +157,6 @@
         </div>
 
         <!--  -->
-
-        <div class="equipamentos">
-          <img
-            class="img-equipamentos"
-            src="../assets/equipamentos/ferramentas/furadeira.jpg"
-          />
-          <div class="cont-ferramentas">
-            <p class="ferramenta">Furadeira</p>
-            <p class="text-1">Unidades</p>
-            <p class="text-2">2</p>
-            <button
-              class="saiba-mais"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#"
-            >
-              Saiba mais
-            </button>
-          </div>
-        </div>
-
-        <!--  -->
-
-        <div class="equipamentos">
-          <img
-            class="img-equipamentos"
-            src="../assets/equipamentos/ferramentas/parafusadeira-a-bateria.jpg"
-          />
-          <div class="cont-ferramentas">
-            <p class="ferramenta">Parafusadeira a bateria</p>
-            <p class="text-1">Unidades</p>
-            <p class="text-2">2</p>
-            <button
-              class="saiba-mais"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#"
-            >
-              Saiba mais
-            </button>
-          </div>
-        </div>
-
-        <!--  -->
-
-        <div class="equipamentos">
-          <img class="img-equipamentos" :src="lixadeira.imgPath" />
-          <div class="cont-ferramentas">
-            <p class="ferramenta">{{ lixadeira.name }}</p>
-            <p class="text-1">Unidades</p>
-            <p class="text-2">{{ lixadeira.unidades }}</p>
-            <button
-              class="saiba-mais"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#"
-            >
-              Saiba mais
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </div>

@@ -2,15 +2,15 @@
   <div class="container-banner">
     <div class="banner">
       <div class="text-banner">
-        <h1> {{ pageName }}</h1>
+        <h1>{{ conteudos.pageName }}</h1>
         <p>
-          <strong>Centro de Marcenara e construção civil</strong> |
+          <strong>Centro de Marcenaria e construção civil</strong> |
           <em class="campus-higienopolis">
             Campus Higienópolis apareça desgraça</em
           >
         </p>
       </div>
-      <img class="imagem-banner" :src="bannerImg" alt="" />
+      <img class="imagem-banner" :src="conteudos.bannerImg" />
     </div>
   </div>
 </template>
@@ -19,8 +19,7 @@
 export default {
   name: "BannerInfos",
   props: {
-    bannerImg: String,
-    pageName: String
+    conteudos: String,
   },
 };
 </script>
@@ -50,8 +49,10 @@ export default {
   z-index: 1;
   left: 0;
   top: 0;
+  height: 370px;
+  object-fit: cover;
   width: 100%;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .banner {

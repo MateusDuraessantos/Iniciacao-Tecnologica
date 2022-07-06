@@ -1,7 +1,7 @@
 <template>
   <div>
-    <BannerInfos :bannerImg="bannerImg" :pageName="pageName" />
-    <MainContent :pageName="pageName" />
+    <BannerInfos :conteudos="conteudos" />
+    <MainContent :conteudos="conteudos" />
   </div>
 </template>
 
@@ -13,8 +13,13 @@ export default {
   name: "InformaticaPage",
   data() {
     return {
-      pageName: "Laboratório de Informática",
-      bannerImg: "/img/labs/informatica.jpg",
+      conteudos: {
+        bannerImg: "/img/lab/informatica/informatica_1.jpg",
+        pageName: "Laboratório de Informática",
+        apresentacao:
+          "Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboe a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunose a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos",
+        video: "/img/lab/informatica/video_informatica_1.MP4",
+      },
     };
   },
   components: {

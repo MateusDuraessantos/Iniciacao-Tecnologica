@@ -24,17 +24,23 @@
       <router-link class="labs first" to="./MarcenariaPage"
         >Marcenaria</router-link
       >
-      <router-link class="labs" to="./InformaticaPage">Informatica</router-link>
+      <router-link class="labs" :style="testes" to="./InformaticaPage"
+        >Informatica</router-link
+      >
 
       <router-link class="labs" to="./InformaticaPage">Cerâmica</router-link>
 
       <router-link class="labs" to="./ImpressaoPage">Impressão</router-link>
 
-      <router-link class="labs" to="./ConfortoPage">Conforto ambiental</router-link>
+      <router-link class="labs" to="./ConfortoPage"
+        >Conforto ambiental</router-link
+      >
 
       <router-link class="labs" to="./MaquetariaPage">Maquetaria</router-link>
 
-      <router-link class="labs" to="./PrototipagemPage">Prototipagem</router-link>
+      <router-link class="labs" to="./PrototipagemPage"
+        >Prototipagem</router-link
+      >
 
       <router-link class="labs" to="./VidroaPage">Vidro</router-link>
 
@@ -46,6 +52,14 @@
 <script>
 export default {
   name: "NewHeader",
+  props: {
+    estilo: String,
+  },
+  /* data() {
+    return {
+      testes: "background: green;",
+    };
+  }, */
 };
 </script>
 

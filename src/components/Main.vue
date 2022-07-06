@@ -1,8 +1,9 @@
 <template>
   <div>
+    <ListaBraba :ferramentas="ferramentas"/>
     <main>
       <div class="lab-title">
-        {{ pageName }}
+        {{ conteudos.pageName }}
       </div>
       <p class="sp-school">
         São Paulo School of Advanced Science on social and affective
@@ -17,10 +18,8 @@
             <p class="text-about-course">
               {{ conteudos.apresentacao }}
             </p>
-            <img
-              style="margin-top: 20px; width: 100%"
-              src="../assets/img/lab.jpg"
-            />
+
+            <video class="videos" :src="conteudos.video" controls></video>
           </div>
 
           <FerramentasLabs />
@@ -126,20 +125,6 @@
                 />
                 <div class="cont-ferramentas">
                   <p class="ferramenta">Regua de metal Aço inox</p>
-                  <p class="text-1">Unidades</p>
-                  <p class="text-2">2</p>
-                </div>
-              </div>
-
-              <!--  -->
-
-              <div class="equipamentos">
-                <img
-                  class="img-equipamentos"
-                  src="../assets/equipamentos/clipes-de-madeira.jpg"
-                />
-                <div class="cont-ferramentas">
-                  <p class="ferramenta">Clipes de madeira</p>
                   <p class="text-1">Unidades</p>
                   <p class="text-2">2</p>
                 </div>
@@ -296,54 +281,30 @@
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
                 class="img-carrossel d-block w-100"
-                src="../assets/img/1.jpg"
+                src="/img/lab/marcenaria/marcenaria_1.jpg"
               />
             </div>
             <div class="carousel-item">
               <img
                 class="img-carrossel d-block w-100"
-                src="../assets/img/2.jpg"
+                src="/img/lab/marcenaria/marcenaria_2.jpg"
               />
             </div>
             <div class="carousel-item">
               <img
                 class="img-carrossel d-block w-100"
-                src="../assets/img/3.jpg"
+                src="/img/lab/marcenaria/marcenaria_3.jpg"
               />
             </div>
             <div class="carousel-item">
               <img
                 class="img-carrossel d-block w-100"
-                src="../assets/img/4.jpg"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="img-carrossel d-block w-100"
-                src="../assets/img/5.jpg"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="img-carrossel d-block w-100"
-                src="../assets/img/6.jpg"
+                src="/img/lab/marcenaria/marcenaria_4.jpg"
               />
             </div>
           </div>
@@ -368,18 +329,20 @@
         </div>
       </div>
     </main>
+    
   </div>
 </template>
 <script>
 import FerramentasLabs from "./Ferramentas.vue";
+import ListaBraba from "./Lista.vue";
 export default {
   name: "MainContent",
   components: {
     FerramentasLabs,
+    ListaBraba,
   },
+
   props: {
-    email: String,
-    pageName: String,
     conteudos: String,
   },
 };
