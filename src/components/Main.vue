@@ -1,6 +1,5 @@
 <template>
   <div>
-    <ListaBraba :ferramentas="ferramentas"/>
     <main>
       <div class="lab-title">
         {{ conteudos.pageName }}
@@ -22,7 +21,7 @@
             <video class="videos" :src="conteudos.video" controls></video>
           </div>
 
-          <FerramentasLabs />
+          <FerramentasLabs :ferramentas="ferramentas" />
 
           <div
             style="
@@ -329,21 +328,19 @@
         </div>
       </div>
     </main>
-    
   </div>
 </template>
 <script>
 import FerramentasLabs from "./Ferramentas.vue";
-import ListaBraba from "./Lista.vue";
 export default {
   name: "MainContent",
   components: {
     FerramentasLabs,
-    ListaBraba,
   },
-
   props: {
     conteudos: String,
+    ferramentas: String,
+    sasi: String,
   },
 };
 </script>
