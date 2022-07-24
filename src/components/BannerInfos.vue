@@ -6,7 +6,7 @@
         <p>
           <strong>Centro de Marcenaria e construção civil</strong> |
           <em class="campus-higienopolis">
-            Campus Higienópolis apareça desgraça</em
+            Campus Higienópolis</em
           >
         </p>
       </div>

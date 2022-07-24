@@ -21,10 +21,13 @@
     </header>
     <nav class="nav-cont">
       <!-- Botões -->
+      <router-link class="labs first" to="./HomePage"
+        >Página Inicia</router-link
+      >
       <router-link class="labs first" to="./MarcenariaPage"
         >Marcenaria</router-link
       >
-      <router-link class="labs" :style="testes" to="./InformaticaPage"
+      <router-link class="labs" to="./InformaticaPage"
         >Informatica</router-link
       >
 
@@ -55,11 +58,7 @@ export default {
   props: {
     estilo: String,
   },
-  /* data() {
-    return {
-      testes: "background: green;",
-    };
-  }, */
+
 };
 </script>
 

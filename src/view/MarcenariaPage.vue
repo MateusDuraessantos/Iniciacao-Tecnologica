@@ -11,6 +11,10 @@ import MainContent from "../components/Main.vue";
 
 export default {
   name: "MarcenariaPage",
+  components: {
+    BannerInfos,
+    MainContent,
+  },
   data() {
     return {
       conteudos: {
@@ -19,6 +23,9 @@ export default {
         apresentacao:
           "Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.",
         video: "/img/lab/marcenaria/video_marcenaria_1.mp4",
+        carrosselOne: "Imagens do carrossel",
+        carrosselTwo: "Imagens do carrossel",
+        carrosselThree: "/img/lab/marcenaria/Teste.jpg",
       },
       /*  */
       ferramentas: [
@@ -77,10 +84,6 @@ export default {
         },
       ],
     };
-  },
-  components: {
-    BannerInfos,
-    MainContent,
   },
 };
 </script>
