@@ -30,118 +30,89 @@
           <aside class="container-aside">
             <div class="cont-container-aside">
               <p class="sobre">Sobre o laboratório</p>
-              <b class="bold-sobre">Modalidade:</b>
             </div>
             <div class="cont-container-aside">
-              <p class="light">Presencial</p>
               <b class="bold-sobre">Horário de funcionamento:</b>
             </div>
-            <p class="light">13h às 16h</p>
-            <b class="bold-sobre">Local:</b>
-            <p class="light" style="color: #0054a8">
-              Campus Higienópolis - <b>Prédio 9</b>
-            </p>
+            <p class="light">{{ asideInfos.horarioDeFuncionamento }}</p>
+            <hr />
 
+            <p class="sobre">Localização</p>
+            <p class="light" style="color: #0054a8">
+              {{ asideInfos.campus }} - <b>{{ asideInfos.localizacao }}</b>
+            </p>
+            <p class="light">{{ asideInfos.end }}</p>
+            <br />
+
+            <img
+              style="width: 100%"
+              src="../assets/img/maps.jpg"
+              alt="mapa superior Mackenzie"
+            />
             <hr />
 
             <div class="prof">
               <img
                 class="img-prof"
-                src="../assets/img/ivo.jpg"
+                :src="asideInfos.cordenadorPerfil"
                 alt="Ivo Pons"
               />
               <div>
-                Prof. Dr. Nieri Araujo
-                <p>Coordenador dos laboratórios FAUD</p>
+                {{ asideInfos.cordenadorNome }}
+                <p>Coordenador do laboratório</p>
               </div>
             </div>
             <div class="container-contato">
               <p class="contato">Contato</p>
               <div class="info-contato">
                 <img src="../assets/icons/phone.svg" />
-                <p>+55 (11) 2114-8707</p>
+                <p>{{ asideInfos.cordenadorContato }}</p>
               </div>
               <div class="info-contato">
                 <img src="../assets/icons/email.svg" />
-                <p>disturbios.pos@mackenzie.br</p>
-              </div>
-              <div class="info-contato">
-                <img src="../assets/icons/clock.svg" />
-                <p>Das 8h00 às 13h00 e das 14h30 às 16h00</p>
-              </div>
-              <div class="info-contato">
-                <img src="../assets/icons/pin.svg" />
-                <p>
-                  Rua da Consolação, 896 - prédio 28, 1° andar - consolação, São
-                  Paulo - Sp, Brasil 01302-907
-                </p>
+                <p>{{asideInfos.cordenadorEmail}}</p>
               </div>
             </div>
-          </aside>
-          <aside class="container-aside">
-            <p class="sobre">Localização</p>
-            <div style="display: inline-block">
-              Prédio
-              <div
-                style="
-                  display: inline-flex;
-                  margin: 0 0 12px;
-                  align-items: center;
-                  justify-content: center;
-                  background: #bcd631;
-                  border-radius: 50%;
-                  color: white;
-                  width: 25px;
-                  height: 25px;
-                "
-              >
-                9
-              </div>
-              - Arquitetura e Design
-            </div>
-            <img
-              style="width: 100%"
-              src="../assets/img/maps.jpg"
-              alt="mapa superior Mackenzie"
-            />
-
-            <br />
-            <br />
 
             <p>Técnicos responsáveis - Lab</p>
 
             <br />
 
-            <div class="cont-tec">
-              <img class="tec" src="../assets/img/mateus.jpg" />
-              <div class="name">
-                <p class="nome-1">Mateus Durães dos Santos</p>
-                <p class="nome-2">mateusduraes@gmail.com</p>
+            <!--  -->
+
+            <div class="container-tecnico">
+              <div v-for="(tecnicos, index) in asideInfos.tecnico" :key="index">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <!-- Imagem de perfil -->
+                  <img class="perfil-tecnico" :src="tecnicos.tecnicoImg" />
+                  <!-- Nomes e emails -->
+                  <div class="container-tec">
+                    <p class="nome">{{ tecnicos.tecnicoName }}</p>
+                    <p class="email">{{ tecnicos.tecnicoEmail }}</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="cont-tec">
-              <img class="tec" src="../assets/img/nieri.jpg" />
-              <div class="name">
-                <p class="nome-1">Prof. Dr. Nieri Araujo</p>
-                <p class="nome-2">Nieri@gmail.com</p>
-              </div>
-            </div>
+            <!--  -->
           </aside>
         </div>
       </div>
-
-      <div class="container-carrossel">
-        <div class="container-barra">
-          <div class="barra"></div>
-          <div class="cont-title-img-lab">
-            <div class="vert"></div>
-            <p class="title-img-lab">Imagens do laboratório</p>
-          </div>
+      <!-- Imagens do laboratório -->
+      <div class="container-barra">
+        <div class="barra"></div>
+        <div class="cont-title-img-lab">
+          <div class="vert"></div>
+          <p class="title-img-lab">Imagens do laboratório</p>
         </div>
-        <!--  -->
-
-        <!--  -->
+      </div>
+      <!--  -->
+      <div class="grid-imagens">
+        <img
+          v-for="(imgGridTeste, index) in conteudos.gridTeste"
+          :key="index"
+          :src="imgGridTeste.imagensTeste"
+        />
       </div>
     </main>
   </div>
@@ -156,7 +127,7 @@ export default {
   props: {
     conteudos: String,
     ferramentas: String,
-    sasi: String,
+    asideInfos: String,
   },
 };
 </script>
@@ -286,6 +257,20 @@ main {
   margin-right: 10px;
 }
 
+.grid-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 100%;
+}
+
+.grid-imagens img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
 .info-contato p {
   margin: 0;
 }
@@ -301,31 +286,35 @@ main {
 h1 {
   margin: 0 0 15px 0;
 }
-.cont-tec {
+.container-tecnico {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
   margin-bottom: 20px;
 }
 
-.name {
+.container-tec {
   display: flex;
   flex-direction: column;
 }
 
-.nome-1 {
+.nome {
   white-space: nowrap;
   font-weight: 500;
   font-size: 18px;
 }
-.nome-2 {
+.email {
   white-space: nowrap;
   font-weight: 300;
   font-size: 16px;
 }
 
-.tec {
+.perfil-tecnico {
   border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
 }
 
 /* Footer */

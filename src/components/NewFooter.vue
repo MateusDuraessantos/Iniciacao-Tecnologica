@@ -1,6 +1,7 @@
 <template>
   <div>
     <footer>
+      <img class="logo" src="/img/logo-mackenzie.svg" />
       <div class="grid-creditos">
         <div class="container-footer">
           <div class="creditos">
@@ -32,7 +33,7 @@
           <div class="creditos">
             <p>Mídia / Notícias:</p>
 
-            Editoria Mackenzie TV Mackenzie[ Notícias Rádio Mackenzie Revista
+            Editoria Mackenzie TV Mackenzie Notícias Rádio Mackenzie Revista
             Mackenzie
           </div>
           <div class="creditos">
@@ -44,6 +45,121 @@
             <p style="margin-top: 20px">Hospitais:</p>
 
             Hospital Universitário Evangélico Mackenzie Hospital Evangélico
+          </div>
+        </div>
+
+        <hr style="margin: 30px 100px" />
+
+        <div class="container-footer">
+          <div class="creditos">
+            <p>Universidade - São Paulo</p>
+
+            Graduação e Pós-Graduação<br />
+            Rua da Consolação, 930<br />
+            Consolação, São Paulo<br />
+            SP, 01302-907<br />
+            (11) 2114-8000<br />
+            (11) 2766-7000 <br />
+
+            <p style="margin-top: 20px">Colégio - São Paulo</p>
+
+            Infantil, Fundamental e Médio <br />
+            Rua Itambé, 145 <br />
+            Higienópolis, São Paulo <br />
+            SP, 01239-001 <br />
+            (11) 2766-7600 <br />
+
+            <p style="margin-top: 20px">Instituto Cristão - Castro</p>
+
+            Técnico e Médio Rod. Guataçara Borba Carneiro, km 03 Castro PR,
+            84166-980 (42) 3232-4224
+          </div>
+
+          <div class="creditos">
+            <p>Universidade - Alphaville</p>
+
+            Graduação<br />
+            Av. Mackenzie, 905<br />
+            Tamboré, Barueri<br />
+            SP, 06460-130<br />
+            (11) 3555-2181/2159<br />
+
+            <p style="margin-top: 20px">Colégio - São Paulo</p>
+            Infantil, Fundamental e Médio <br />
+            Av. Mackenzie <br />
+            Tamboré, Barueri <br />
+            SP, 06460-130 <br />
+            (11) 3555-2000 <br />
+
+            <p style="margin-top: 20px">Faculdade - Brasília</p>
+
+            Graduação e Pós-Graduação <br />
+            SGAS 906 Conj A Bloco 1 <br />
+            Asa Sul, Brasília <br />
+            DF, 70390-060 <br />
+            (61) 3521-9300 <br />
+          </div>
+          <div class="creditos">
+            <p>Universidade - Alphaville</p>
+
+            Pós-Graduação<br />
+            Al. Tocantins, 125<br />
+            Alphaville, Barueri<br />
+            SP, 06455-931<br />
+            (11) 3555-2048/2022<br />
+
+            <p style="margin-top: 20px">Colégio - São Paulo</p>
+
+            Infantil, Fundamental e Médio <br />
+            SHIS Ql 05 Chác. 74 a 79 <br />
+            Lago Sul, Brasília <br />
+            DF, 71600-500 <br />
+            (61) 2106-9000 <br />
+            (61) 3521-9000 <br />
+
+            <p style="margin-top: 20px">Faculdade - Rio</p>
+            Graduação e Pós-Graduação <br />
+            Rua Buenos Aires, 283 <br />
+            Centro, Rio de Janeiro <br />
+            RJ, 20061-003 <br />
+            (21) 2114-5252 <br />
+          </div>
+          <div class="creditos">
+            <p>Universidade - Campinas</p>
+
+            Graduação e Pós-Graduação<br />
+            Av. Brasil, 1220<br />
+            Jd. Guanabara, Campinas<br />
+            SP, 13073-148<br />
+            (19) 3211-4100<br />
+
+            <p style="margin-top: 20px">Colégio - Palmas</p>
+
+            Infantil, Fundamental e Médio<br />
+            Qd. 106 Sul - Alameda 30<br />
+            Lote 10-A, Palmas<br />
+            TO, 77020-050<br />
+            (63) 3236-5300<br />
+
+            <p style="margin-top: 20px">Faculdade - Curitiba</p>
+            Graduação e Pós-Graduação <br />
+            Rua Padre Anchieta, 2770 <br />
+            Bigorrilho, Curitiba <br />
+            PR, 80730-000 <br />
+            (41) 3240-5500 <br />
+          </div>
+        </div>
+
+        <hr style="margin: 30px 100px" />
+
+        <div class="container-footer">
+          <div class="creditos">
+            <p>Hospital Evangélico Dr. e Sra. Goldsby King</p>
+
+            Rua: Hilda Bergo Duarte, 81 - Centro <br />
+            Dourados, MS <br />
+            PR, 79803-060 <br />
+            +55 (067) 3416-7800 <br />
           </div>
         </div>
       </div>
@@ -75,9 +191,11 @@ footer {
   border: solid #00547f;
   border-width: 4px 0 0 0;
   width: 100%;
-  height: 500px;
-  background: #cc141d;
+  padding: 30px 0 200px 0;
+
+  background: #af1816;
   color: white;
+  overflow: hidden;
 }
 
 .grid-creditos {
@@ -173,5 +291,13 @@ footer {
   height: 35vw;
   width: 100%;
   object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  right: -100px;
+  top: 200px;
+  height: 105%;
+  opacity: 0.2;
 }
 </style>

@@ -1,7 +1,11 @@
 <template>
   <div>
     <BannerInfos :conteudos="conteudos" />
-    <MainContent :ferramentas="ferramentas" :conteudos="conteudos" />
+    <MainContent
+      :ferramentas="ferramentas"
+      :conteudos="conteudos"
+      :asideInfos="asideInfos"
+    />
   </div>
 </template>
 
@@ -17,6 +21,35 @@ export default {
   },
   data() {
     return {
+      asideInfos: {
+        horarioDeFuncionamento: "13h às 16h",
+        campus: "Campus Higienópolis",
+        localizacao: "Prédio 9 - Arquitetura e Design",
+        end: "Rua Marte - Suzano",
+        /* Sobre o cordenador */
+        cordenadorPerfil: "/img/eli.jpg",
+        cordenadorNome: "Eli",
+        cordenadorContato: "+55 (11) 2114-8707",
+        cordenadorEmail: "disturbios.pos@mackenzie.br",
+
+        tecnico: [
+          {
+            tecnicoImg: "/img/jake-sully.jpg",
+            tecnicoName: "Jake Sully",
+            tecnicoEmail: "avatar2brabo@centurystudios.com",
+          },
+          {
+            tecnicoImg: "/img/walter-white.jpg",
+            tecnicoName: "Walter White - Heisenberg",
+            tecnicoEmail: "breakingbad@netflix.com",
+          },
+          {
+            tecnicoImg: "/img/final-space.jpg",
+            tecnicoName: "Final Space",
+            tecnicoEmail: "finalspace@netflix.com",
+          },
+        ],
+      },
       conteudos: {
         bannerImg: "/img/lab/marcenaria/marcenaria_1.jpg",
         pageName: "Laboratório de Marcenaria",
@@ -26,8 +59,25 @@ export default {
         carrosselOne: "Imagens do carrossel",
         carrosselTwo: "Imagens do carrossel",
         carrosselThree: "/img/lab/marcenaria/Teste.jpg",
+        /* Todas as imagens do laboratório */
+        gridTeste: [
+          {
+            imagensTeste: "/img/lab/marcenaria/marcenaria_1.jpg",
+          },
+          {
+            imagensTeste: "/img/lab/marcenaria/marcenaria_2.jpg",
+          },
+          {
+            imagensTeste: "/img/lab/marcenaria/marcenaria_3.jpg",
+          },
+          {
+            imagensTeste: "/img/lab/marcenaria/marcenaria_4.jpg",
+          },
+        ],
       },
+
       /*  */
+
       ferramentas: [
         {
           ferramenta: "Serra de corte DeWalt",
@@ -37,8 +87,12 @@ export default {
           linkButton2: "serradecorte",
           tumble: require("../assets/equipamentos/ferramentas/serra-de-corte.jpg"),
           gridInfosImg: [
-            { url: "/img/equipamentos/ferramentas/serradecorte.jpg" },
-            { url: "/img/equipamentos/ferramentas/serradecorte.jpg" },
+            {
+              url: "/img/equipamentos/ferramentas/serradecorte.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/serradecorte.jpg",
+            },
           ],
         },
         {
@@ -48,10 +102,18 @@ export default {
           linkButton1: "#furadeira",
           tumble: require("../assets/equipamentos/ferramentas/furadeira.jpg"),
           gridInfosImg: [
-            { url: "/img/equipamentos/ferramentas/furadeira.jpg" },
-            { url: "/img/equipamentos/ferramentas/furadeira.jpg" },
-            { url: "/img/equipamentos/ferramentas/furadeira.jpg" },
-            { url: "/img/equipamentos/ferramentas/furadeira.jpg" },
+            {
+              url: "/img/equipamentos/ferramentas/furadeira.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/furadeira.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/furadeira.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/furadeira.jpg",
+            },
           ],
           linkButton2: "furadeira",
         },
@@ -63,10 +125,18 @@ export default {
           linkButton2: "tico-tico",
           tumble: require("../assets/equipamentos/ferramentas/tico-tico.jpg"),
           gridInfosImg: [
-            { url: "/img/equipamentos/ferramentas/tico-tico.jpg" },
-            { url: "/img/equipamentos/ferramentas/tico-tico.jpg" },
-            { url: "/img/equipamentos/ferramentas/tico-tico.jpg" },
-            { url: "/img/equipamentos/ferramentas/tico-tico.jpg" },
+            {
+              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
+            },
+            {
+              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
+            },
           ],
         },
         {

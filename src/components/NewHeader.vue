@@ -27,9 +27,7 @@
       <router-link class="labs first" to="./MarcenariaPage"
         >Marcenaria</router-link
       >
-      <router-link class="labs" to="./InformaticaPage"
-        >Informatica</router-link
-      >
+      <router-link class="labs" to="./InformaticaPage">Informatica</router-link>
 
       <router-link class="labs" to="./InformaticaPage">Cerâmica</router-link>
 
@@ -58,7 +56,6 @@ export default {
   props: {
     estilo: String,
   },
-
 };
 </script>
 
@@ -78,6 +75,9 @@ header {
   width: 100%;
   height: 40px;
   padding: 0 100px;
+  z-index: 1000;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+
 }
 
 .labs {
