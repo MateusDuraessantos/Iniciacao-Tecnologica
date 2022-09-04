@@ -21,31 +21,14 @@
     </header>
     <nav class="nav-cont">
       <!-- Botões -->
-      <router-link class="labs first" to="./HomePage"
-        >Página Inicia</router-link
-      >
-      <router-link class="labs first" to="./MarcenariaPage"
-        >Marcenaria</router-link
-      >
-      <router-link class="labs" to="./InformaticaPage">Informatica</router-link>
-
-      <router-link class="labs" to="./InformaticaPage">Cerâmica</router-link>
-
+      <router-link class="labs first" to="./HomePage">Página Inicia</router-link>
+      <router-link class="labs" to="./MarcenariaPage">Marcenaria</router-link>
+      <router-link class="labs" to="./CeramicaPage">Cerâmica</router-link>
+      <router-link class="labs" to="./InformaticaPage">Informática</router-link>
+      <router-link class="labs" to="./JoiaPage">Joia e Vidro</router-link>
       <router-link class="labs" to="./ImpressaoPage">Impressão</router-link>
-
-      <router-link class="labs" to="./ConfortoPage"
-        >Conforto ambiental</router-link
-      >
-
+      <router-link class="labs" to="./PrototipagemPage">Prototipagem</router-link>
       <router-link class="labs" to="./MaquetariaPage">Maquetaria</router-link>
-
-      <router-link class="labs" to="./PrototipagemPage"
-        >Prototipagem</router-link
-      >
-
-      <router-link class="labs" to="./VidroaPage">Vidro</router-link>
-
-      <router-link class="labs" to="./CTTPage">CTT</router-link>
     </nav>
   </div>
 </template>
@@ -77,7 +60,6 @@ header {
   padding: 0 100px;
   z-index: 1000;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
-
 }
 
 .labs {

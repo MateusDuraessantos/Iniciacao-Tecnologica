@@ -1,24 +1,53 @@
 <template>
   <div>
     <main>
-      <div class="lab-title">
-        {{ conteudos.pageName }}
+      <div class="pageName">
+        <div class="lab-title">
+          {{ conteudos.pageName }}
+        </div>
       </div>
-      <p class="sp-school">
-        São Paulo School of Advanced Science on social and affective
-        Neuroscience (SPSAN)
-      </p>
 
       <div class="container-grid">
         <!--  -->
         <div>
           <div class="container-labs">
-            <p>Lorem Ipsum is simply dummy text of the printing (SCN LAB)</p>
-            <p class="text-about-course">
+            <p>Sobre o laboratório</p>
+            <p class="text-about-course" style="white-space: pre-wrap">
               {{ conteudos.apresentacao }}
             </p>
 
-            <video class="videos" :src="conteudos.video" controls></video>
+            <p></p>
+            <video
+              class="videos"
+              :style="conteudos.none"
+              :src="conteudos.video"
+              controls
+            ></video>
+            <img class="imgVideo" :src="conteudos.imgVideo" />
+            <br />
+            <strong>Curiosidades</strong>
+            <br />
+            <ul style="font-weight: 300">
+              <li>
+                <strong>Qualquer aluno matriculado</strong> na Universidade
+                Presbiteriana Mackenzie tem acesso ao laboratório.
+              </li>
+              <li>
+                Não é necessário nenhum investimento para desfrutar dos
+                equipamentos deste laboratório (Salvo materias como: Lixas,
+                tintas e etc).
+              </li>
+              <li>
+                Os equipamento devem ser utilizados
+                <strong> apenas com a instrução e presença </strong>
+                do técnico do laboratório.
+              </li>
+              <li>
+                Qualquer dano físico causado aos equipamentos, é incubencia do
+                <strong>responsável</strong> pelo ato de arcar com os custos
+                para o reparo.
+              </li>
+            </ul>
           </div>
 
           <FerramentasLabs :ferramentas="ferramentas" />
@@ -44,11 +73,11 @@
             <p class="light">{{ asideInfos.end }}</p>
             <br />
 
-            <img
+            <!--   <img
               style="width: 100%"
-              src="../assets/img/maps.jpg"
+              :src="asideInfos.mapa"
               alt="mapa superior Mackenzie"
-            />
+            /> -->
             <hr />
 
             <div class="prof">
@@ -70,7 +99,7 @@
               </div>
               <div class="info-contato">
                 <img src="../assets/icons/email.svg" />
-                <p>{{asideInfos.cordenadorEmail}}</p>
+                <p>{{ asideInfos.cordenadorEmail }}</p>
               </div>
             </div>
 
@@ -138,7 +167,7 @@ main {
   display: flex;
   flex-direction: column;
   width: calc(100% - 50px);
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .lab-group {
@@ -146,14 +175,34 @@ main {
   font-size: 20px;
 }
 
+.imgVideo {
+  margin-top: 20px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.container-barra {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 1150px;
+}
 .lab-title {
   background: #00547f;
   color: white;
   font-size: 17px;
   width: max-content;
-  max-width: 1400px;
   margin: 25px 0 25px 0;
   padding: 10px 20px;
+}
+
+.pageName {
+  margin: auto;
+  width: 100%;
+  max-width: 1150px;
 }
 
 /*  */
@@ -267,6 +316,8 @@ main {
 .grid-imagens img {
   width: 100%;
   height: 100%;
+  min-height: 225px;
+  max-height: 300px;
 
   object-fit: cover;
 }
@@ -305,7 +356,6 @@ h1 {
   font-size: 18px;
 }
 .email {
-  white-space: nowrap;
   font-weight: 300;
   font-size: 16px;
 }

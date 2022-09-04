@@ -1,15 +1,7 @@
 <template>
   <div>
-    <div
-      style="
-        margin: 40px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      "
-    >
-      <h3>Equipamentos pesados disponíveis</h3>
+    <div class="equiDispo">
+      <h3>Equipamentos disponíveis</h3>
 
       <div
         style="
@@ -20,8 +12,61 @@
         "
       ></div>
     </div>
-
+    <!-- Como agendar horário -->
     <div class="container-labs">
+      <div class="sobre-equipamentos">
+        <button
+          type="button"
+          class="saiba-mais"
+          data-bs-toggle="modal"
+          data-bs-target="#agendarHorario"
+        >
+          Como agendar horário
+        </button>
+
+        <div
+          class="modal fade"
+          id="agendarHorario"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Como agendar horário
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Para agendar um horário com algum equipamento, fale
+                  <strong>diretamente</strong> com os técnicos do laboratório ou
+                  mande um email para
+                  <strong>mackenzie@mackenzie.com</strong> com a seguinte
+                  mensagem:
+                  <br />
+                  <br />
+                  <strong>Assunto:</strong> <br />
+                  Agendamento de horário no laboratório
+                  <br />
+                  <br />
+                  <strong>Na mensagem:</strong><br />
+                  Eu "Seu nome" TIA "seu tia", "seu curso" quero agendar um
+                  horário no laboratório "escrever nome do laboratório" quero
+                  agendar um horário com no/a "nome do equipamento".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
         <!-- 1° -->
 
@@ -30,8 +75,8 @@
             <img class="img-equipamentos" :src="aqui.tumble" />
             <div class="cont-ferramentas">
               <p class="ferramenta">{{ aqui.ferramenta }}</p>
-              <p class="text-1">Unidades</p>
-              <p class="text-2">2</p>
+             <!--  <p class="text-1">Unidades</p>
+              <p class="text-2">2</p> -->
               <button
                 class="saiba-mais"
                 type="button"
@@ -69,15 +114,16 @@
                   <table class="table">
                     <tbody>
                       <tr>
-                        <td scope="row">{{ aqui.ferramenta }}</td>
-                        <td class="infos">
+                        <td style="width: 200px" scope="row">
+                          {{ aqui.ferramenta }}
                           {{ aqui.sobre }}
                         </td>
+                       
                       </tr>
-                      <tr>
+                     <!--  <tr>
                         <th scope="row">Unidades</th>
                         <td>1</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
 
@@ -157,6 +203,16 @@ h3 {
   margin-bottom: 30px;
 }
 
+/*  */
+
+.sobre-equipamentos {
+  margin: 0 0 40px 0;
+}
+
+.modal-body {
+  font-weight: 300;
+}
+
 /* Estilo do modal */
 
 .saiba-mais {
@@ -167,6 +223,7 @@ h3 {
   font-weight: 200px;
   width: max-content;
   border-radius: 50px;
+  margin-top: 10px;
   padding: 2px 10px;
   border: none;
   border: 1px solid #cc141d;
@@ -181,16 +238,22 @@ h3 {
 
 .grid-infos-img {
   display: grid;
-  gap: 40px;
+  gap: 20px;
   grid-template-columns: 1fr 1fr;
-}
-
-.infos {
-  font-size: 12px;
-  font-weight: 400;
 }
 
 .img-infos {
   width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.equiDispo {
+  margin: 40px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 </style>

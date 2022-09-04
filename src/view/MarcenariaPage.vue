@@ -25,18 +25,18 @@ export default {
         horarioDeFuncionamento: "13h às 16h",
         campus: "Campus Higienópolis",
         localizacao: "Prédio 9 - Arquitetura e Design",
-        end: "Rua Marte - Suzano",
+        end: "R. da Consolação, 930 - Consolação, São Paulo - SP, 01302-907",
         /* Sobre o cordenador */
         cordenadorPerfil: "/img/eli.jpg",
         cordenadorNome: "Eli",
-        cordenadorContato: "+55 (11) 2114-8707",
-        cordenadorEmail: "disturbios.pos@mackenzie.br",
+        cordenadorContato: "+55 (11) 0000-0000",
+        cordenadorEmail: "mackenzie@mackenzie.com.br",
 
         tecnico: [
           {
             tecnicoImg: "/img/jake-sully.jpg",
             tecnicoName: "Jake Sully",
-            tecnicoEmail: "avatar2brabo@centurystudios.com",
+            tecnicoEmail: "avatar2brabo@century.com",
           },
           {
             tecnicoImg: "/img/walter-white.jpg",
@@ -51,10 +51,9 @@ export default {
         ],
       },
       conteudos: {
+        apresentacao: "",
         bannerImg: "/img/lab/marcenaria/marcenaria_1.jpg",
         pageName: "Laboratório de Marcenaria",
-        apresentacao:
-          "Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.Texto de apresentação do laboratório contando um pouco sobre a história e possibilidades possíveis para os alunos.",
         video: "/img/lab/marcenaria/video_marcenaria_1.mp4",
         carrosselOne: "Imagens do carrossel",
         carrosselTwo: "Imagens do carrossel",
@@ -80,76 +79,83 @@ export default {
 
       ferramentas: [
         {
-          ferramenta: "Serra de corte DeWalt",
+          ferramenta: "Serra de corte",
           sobre:
             "Serra corte rápido construção robusta, morsa de aperto rápido, guia de corte angular, compartimento integrado para chave de ajuste e troca do disco, interruptortipo gatilho com função homem morto e orifício para cadeado. Ideal para trabalhos em serralheiras e departamentos de manutenção em cortes de metais.",
           linkButton1: "#serradecorte",
           linkButton2: "serradecorte",
-          tumble: require("../assets/equipamentos/ferramentas/serra-de-corte.jpg"),
+          tumble: "/img/lab/marcenaria/equipamentos/serradecorte.jpg",
+
           gridInfosImg: [
             {
-              url: "/img/equipamentos/ferramentas/serradecorte.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/serradecorte.jpg",
+              url: "/img/lab/marcenaria/equipamentos/serradecorte.jpg",
             },
           ],
         },
         {
-          ferramenta: "Furadeira",
-          sobre:
-            "Furadeiras são máquinas que têm como função principal executar furos nos mais diversos tipos de materiais. Para tanto o motor da furadeira aplica uma alta velocidade de rotação a uma ou várias brocas que serão responsáveis pela remoção de material desejada.",
-          linkButton1: "#furadeira",
-          tumble: require("../assets/equipamentos/ferramentas/furadeira.jpg"),
+          ferramenta: "CNC Router",
+          sobre: "",
+          linkButton1: "#cnc-router",
+          linkButton2: "cnc-router",
+          tumble: "/img/lab/marcenaria/equipamentos/cnc-router.jpg",
+
           gridInfosImg: [
             {
-              url: "/img/equipamentos/ferramentas/furadeira.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/furadeira.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/furadeira.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/furadeira.jpg",
+              url: "/img/lab/marcenaria/equipamentos/cnc-router.jpg",
             },
           ],
-          linkButton2: "furadeira",
         },
 
         {
-          ferramenta: "Tico Tico",
+          ferramenta: "Furadeira",
           sobre: "",
-          linkButton1: "#tico-tico",
-          linkButton2: "tico-tico",
-          tumble: require("../assets/equipamentos/ferramentas/tico-tico.jpg"),
+          linkButton1: "#furadeira",
+          linkButton2: "furadeira",
+          tumble: "/img/lab/marcenaria/equipamentos/furadeira.jpg",
+
           gridInfosImg: [
             {
-              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
-            },
-            {
-              url: "/img/equipamentos/ferramentas/tico-tico.jpg",
+              url: "/img/lab/marcenaria/equipamentos/furadeira.jpg",
             },
           ],
         },
         {
-          ferramenta: "Tupia Tupia",
+          ferramenta: "Parafusadeira",
+          sobre: "",
+          linkButton1: "#parafusadeira",
+          linkButton2: "parafusadeira",
+          tumble: "/img/lab/marcenaria/equipamentos/parafusadeira.jpg",
+
+          gridInfosImg: [
+            {
+              url: "/img/lab/marcenaria/equipamentos/parafusadeira.jpg",
+            },
+          ],
+        },
+        {
+          ferramenta: "Tupia",
           sobre: "",
           linkButton1: "#tupia-tupia",
           linkButton2: "tupia-tupia",
-          tumble: require("../assets/equipamentos/ferramentas/tupia-tupia.jpg"),
+          tumble: "/img/lab/marcenaria/equipamentos/tupia.jpg",
+
           gridInfosImg: [
-            { url: "/img/equipamentos/ferramentas/tupia-tupia.jpg" },
-            { url: "/img/equipamentos/ferramentas/tupia-tupia.jpg" },
-            { url: "/img/equipamentos/ferramentas/tupia-tupia.jpg" },
-            { url: "/img/equipamentos/ferramentas/tupia-tupia.jpg" },
+            {
+              url: "/img/lab/marcenaria/equipamentos/tupia.jpg",
+            },
+          ],
+        },
+        {
+          ferramenta: "Serra Tico Tico",
+          sobre: "",
+          linkButton1: "#ticotico",
+          linkButton2: "ticotico",
+          tumble: "/img/lab/marcenaria/equipamentos/ticotico.jpg",
+
+          gridInfosImg: [
+            {
+              url: "/img/lab/marcenaria/equipamentos/ticotico.jpg",
+            },
           ],
         },
       ],

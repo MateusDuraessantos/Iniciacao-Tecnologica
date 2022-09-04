@@ -247,13 +247,6 @@ footer {
 
 /* imagens do laboratório */
 
-.container-barra {
-  display: flex;
-  align-items: center;
-  margin: 0 25px;
-  width: 100%;
-  max-width: 1400px;
-}
 
 .barra {
   width: 3px;

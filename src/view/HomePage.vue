@@ -4,7 +4,6 @@
       <h1>Laboratórios Mackenzie</h1>
       <img src="img/mackenzie.jpg" alt="Banner Mackenzie" />
     </div> -->
-
     <div class="cont-pesquisa">
       <div>
         <input class="pesquisar" type="text" placeholder="Pesquise por..." />
@@ -19,7 +18,7 @@
               <div class="container-card">
                 <img class="img" :src="grid.imgCard" />
                 <div class="hover" />
-                <p class="text-card-hover">Visitar Laboratório</p>
+                <p class="text-card-hover">Visitar</p>
               </div>
               <div class="cont-text">
                 <h5>{{ grid.nameLab }}</h5>
@@ -35,34 +34,52 @@
 </template>
 <script>
 export default {
-  components: {
-
-  },
   name: "HomePage",
   data() {
     return {
       cardInfos: {
         conteudos: [
           {
-            description:
-              "Laboratório de fisiofarmacologia metabólica cardiovascular e renal - CCBS",
             nameLab: "Marcenaria",
-            imgCard: "/img/lab/marcenaria/marcenaria_2.jpg",
+            description: "Laboratório de marcenaria",
+            imgCard: "/img/lab/marcenaria/marcenaria_4.jpg",
             toLink: "./MarcenariaPage",
           },
           {
-            description:
-              "Laboratório de fisiofarmacologia metabólica cardiovascular e renal - CCBS",
-            nameLab: "Vidro",
-            imgCard: "/img/lab/marcenaria/marcenaria_2.jpg",
-            toLink: "./MarcenariaPage",
+            nameLab: "Cerâmica",
+            description: "Laboratório de cerâmica",
+            imgCard: "/img/lab/ceramica/ceramica_9.jpg",
+            toLink: "./CeramicaPage",
           },
           {
-            description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ",
-            nameLab: "Informatica",
+            nameLab: "Informática",
+            description: "Laboratório de Informatica ",
             imgCard: "/img/lab/informatica/informatica_1.jpg",
             toLink: "./InformaticaPage",
+          },
+          {
+            nameLab: "Joia e Vidro",
+            description: "Laboratório de Joia",
+            imgCard: "/img/lab/joia/VIDRO_01_tumble.JPG",
+            toLink: "./JoiaPage",
+          },
+          {
+            nameLab: "Impressao",
+            description: "Laboratório de Impressao",
+            imgCard: "/img/lab/impressao/impressao_3.jpg",
+            toLink: "./ImpressaoPage",
+          },
+          {
+            nameLab: "Prototipagem",
+            description: "Laboratório de Prototipagem",
+            imgCard: "/img/lab/prototipagem/prototipagem_8.2.jpg",
+            toLink: "./PrototipagemPage",
+          },
+          {
+            nameLab: "Maquetaria",
+            description: "Laboratório de Maquetaria",
+            imgCard: "/img/lab/maquetaria/image6.jpg",
+            toLink: "./MaquetariaPage",
           },
         ],
       },
@@ -181,8 +198,7 @@ h1 {
 }
 
 .img {
-  height: 100%;
-  min-height: 200px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }

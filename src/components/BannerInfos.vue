@@ -57,7 +57,7 @@ export default {
 
 .banner {
   width: calc(100% - 50px);
-  max-width: 1400px;
+  max-width: 1150px;
   color: white;
 }
 
